@@ -33,7 +33,7 @@ export default function DashboardCard({ label, value, color }: Props) {
   return (
     <CardWrapper color={color}>
       <Label>{label}</Label>
-      <Value>{value}</Value>
+      <Value>{value}</Value>asdasdasdasdasdad
     </CardWrapper>
   );
 }
