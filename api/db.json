@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@test.com",
+      "password": "123456",
+      "name": "Administrador",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Salary", "type": "income" },
+    { "id": 2, "name": "Freelance", "type": "income" },
+    { "id": 3, "name": "Investments", "type": "income" },
+
+    { "id": 4, "name": "Food", "type": "expense" },
+    { "id": 5, "name": "Transportation", "type": "expense" },
+    { "id": 6, "name": "Entertainment", "type": "expense" },
+    { "id": 7, "name": "Subscriptions", "type": "expense" },
+    { "id": 8, "name": "Shopping", "type": "expense" },
+    { "id": 9, "name": "Health", "type": "expense" }
+  ],
+
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Cash",
+      "type": "wallet",
+      "balance": 500
+    },
+    {
+      "id": 2,
+      "name": "Bank Account",
+      "type": "bank",
+      "balance": 1500
+    }
+  ],
+
+  "transactions": [
+    {
+      "id": "t1",
+      "title": "Monthly Salary",
+      "amount": 3500,
+      "type": "income",
+      "category": "Salary",
+      "date": "2024-01-01",
+      "accountId": 2,
+      "notes": "Pago mensual",
+      "tags": ["salary", "job"]
+    },
+    {
+      "id": "t2",
+      "title": "Restaurant dinner",
+      "amount": 45,
+      "type": "expense",
+      "category": "Food",
+      "date": "2024-01-03",
+      "accountId": 1,
+      "notes": "Cena con amigos",
+      "tags": ["food", "friends"]
+    },
+    {
+      "id": "t3",
+      "title": "Netflix subscription",
+      "amount": 18,
+      "type": "expense",
+      "category": "Subscriptions",
+      "date": "2024-01-05",
+      "accountId": 2,
+      "notes": "Pago mensual Netflix",
+      "tags": ["subscription", "entertainment"]
+    },
+    {
+      "id": "t4",
+      "title": "Freelance project",
+      "amount": 600,
+      "type": "income",
+      "category": "Freelance",
+      "date": "2024-01-10",
+      "accountId": 2,
+      "notes": "Proyecto de desarrollo",
+      "tags": ["freelance"]
+    },
+    {
+      "id": "t5",
+      "title": "Groceries",
+      "amount": 80,
+      "type": "expense",
+      "category": "Food",
+      "date": "2024-01-12",
+      "accountId": 1,
+      "notes": "",
+      "tags": ["groceries"]
+    },
+    {
+      "id": "t6",
+      "title": "Bus Ticket",
+      "amount": 3,
+      "type": "expense",
+      "category": "Transportation",
+      "date": "2024-01-12",
+      "accountId": 1,
+      "tags": ["transport"]
+    }
+  ],
+
+  "budgets": [
+    {
+      "id": 1,
+      "month": "2024-01",
+      "category": "Food",
+      "limit": 300,
+      "spent": 125
+    },
+    {
+      "id": 2,
+      "month": "2024-01",
+      "category": "Entertainment",
+      "limit": 150,
+      "spent": 18
+    }
+  ],
+
+  "goals": [
+    {
+      "id": 1,
+      "name": "Savings Goal",
+      "target": 5000,
+      "current": 800,
+      "deadline": "2024-12-01"
+    }
+  ]
+}

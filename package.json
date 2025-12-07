@@ -7,16 +7,22 @@
     "build": "next build",
     "start": "next build && next start",
     "lint": "eslint",
-    "json-server": "json-server --watch db/db.json --port 3001",
+    "json-server": "node api/server.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run json-server\"",
     "test": "jest"
   },
   "dependencies": {
     "axios": "^1.7.9",
+    "body-parser": "^2.2.1",
+    "chart.js": "^4.5.1",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.556.0",
     "next": "16.0.7",
     "react": "19.2.0",
+    "react-chartjs-2": "^5.3.1",
     "react-dom": "19.2.0",
-    "zustand": "^5.0.2"
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,9 +30,12 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^30.0.0",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/styled-components": "^5.1.36",
+    "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
     "jest": "^30.2.0",
@@ -34,6 +43,20 @@
     "json-server": "^1.0.0-beta.3",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
-  }
+    "typescript": "^5",
+    "zustand": "^5.0.9"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidZuluaga1991/personalfinance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidZuluaga1991/personalfinance/issues"
+  },
+  "homepage": "https://github.com/DavidZuluaga1991/personalfinance#readme"
 }
