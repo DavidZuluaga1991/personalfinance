@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "demo@example.com",
+      "password": "demo123",
+      "name": "Demo User"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": "1",
+      "title": "Salario",
+      "amount": 3000,
+      "type": "income",
+      "category": "salary",
+      "date": "2024-12-01",
+      "createdAt": "2024-12-01T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "title": "Supermercado",
+      "amount": 150,
+      "type": "expense",
+      "category": "food",
+      "date": "2024-12-05",
+      "createdAt": "2024-12-05T15:30:00.000Z"
+    }
+  ]
+}
